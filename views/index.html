@@ -30,8 +30,9 @@
         <div class="tweetbox">
           <img>
           <div class="content">
-            <p class="by"><a href="/users/{{tweet.name}}">{{tweet.User.name}}</a></p>
+            <p class="by"><a href="/users/{{tweet.User.name}}">{{tweet.User.name}}</a></p>
             <p><a href="/tweets/{{tweet.id}}">{{tweet.tweet}}</a></p>
+            <a href="/delete/{{tweet.id}}"><button type="button" class="btn btn-danger">Delete</button>
           </div>
         </div>
       {% endfor %}
